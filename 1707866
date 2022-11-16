@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>calculator</title>
+  
+  <style>
+ body{text-align:center;
+  animation:xyz 15s infinite;} 
+
+@keyframes xyz {
+  20%{ background-color:orange;
+     color:blue;
+    
+  }
+  
+  40%{ background-color:yellow;
+     
+  }
+  
+  60%{ background-color:pink;
+  
+    
+  }
+} 
+
+h1{font-family: serif;
+    font-size:150px;
+    font-weight:100px;
+    margin-top:320px;
+    margin-bottom:100px;
+  animation: abc 15s infinite;} 
+
+@keyframes abc {
+   40%{text-shadow:20px 20px 10px black;}
+    40%{ transform: rotate(20deg);}
+ 60% {transform: rotate(15 deg);} 
+ 
+ 80% {transform: rotate(0deg);} 
+} 
+
+button{margin:100px;
+width:330px;
+height:100px;
+background:pink;
+border:1px solid grey;
+box-shadow : 4px 5px 5px grey;
+font-size:30px;
+font-weight:70px;
+border-radius:20px;
+animation:cam 10s infinite;
+} 
+
+
+     
+
+.time{
+     font-size:40px;
+     font-weight:100px; 
+     margin-left :20%;
+     margin-top: 35%;
+     padding: 30px;
+     background:greenyellow;
+     width:60%;
+     animation:time 10s infinite;
+} 
+
+     
+     @keyframes time {
+       
+     29%{box-shadow:10px 10px 5px pink;
+        color:orange;
+        background:pink;
+       
+     } 
+     
+     49%{box-shadow:10px 10px 5px grey;
+        color:red;
+        background:pink;
+        width:40%;
+     }
+     
+     80%{transform:rotate(360deg);
+       color:blue;
+       background:greenyellow;
+       width:55%;
+     } 
+     
+     100% { 
+       color:black;
+       background:orange;
+     } 
+     
+     
+
+
+     } 
+  </style>
+</head>
+
+<body> 
+
+<div class="time" onclick="this.innerHTML=Date()"> Show date and time </div>
+
+  <h1>calculator</h1>
+  
+ <button id="btn"> start calculations</button>
+  
+  <script type="text/javascript" language="javascript" >
+  
+      btn.onclick = function() {
+var x=parseInt(prompt("enter value 1"));
+var y=parseInt(prompt("enter value 2"));
+var z=parseInt(prompt("press (1 for +),(2 for -  ),(3 for multiple ),(4 for division)" ));
+    
+    switch(z) {
+        case 1 :
+        z=x+y;
+        document.write(z);
+        break;
+        
+        case 2 :
+        z=x-y;
+        document.write(z);
+        break;
+        
+        case 3 :
+        z=x*y;
+        document.write(z);
+        break;
+        
+        case 4 :
+        z=x/y;
+        document.write(z);
+        break;
+        
+        default :
+        document.write("error");
+    }
+    
+      } ;
+  </script>
+
+</body>
+
+</html>
